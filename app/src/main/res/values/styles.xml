@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--ToolBar颜色-->
+        <item name="colorPrimary">#ff5593</item>
+        <!--状态栏的颜色-->
+        <item name="colorPrimaryDark">#ff5593</item>
+        <!--控件的样式颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--menu-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+
+    </style>
+
+    <!--设置ToolBar整体颜色-->
+    <style name="toolbar" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+    </style>
+
+    <!--menu-->
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">500dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-100dp</item>
+    </style>
+
+</resources>

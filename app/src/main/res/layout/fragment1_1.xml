@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.u2androidproject.fragment.fragment1.Fragment1_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_starOrder"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/king_red"
+                android:gravity="center_vertical"
+                android:text="  明星排行榜"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <com.u2androidproject.widget.NoScrollGridView
+                android:layout_marginTop="10dp"
+                android:id="@+id/mGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                ></com.u2androidproject.widget.NoScrollGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#898888"></View>
+
+
+            <TextView
+                android:id="@+id/tv_starState"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/star_red"
+                android:gravity="center_vertical"
+                android:text="  明星动态"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <com.u2androidproject.widget.NoScrollGridView
+                android:layout_marginTop="5dp"
+                android:id="@+id/mGridView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                ></com.u2androidproject.widget.NoScrollGridView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

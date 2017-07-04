@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.u2androidproject.SearchMovieActivity">
+
+    <LinearLayout
+        android:background="#ff5593"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.u2androidproject.widget.MyEditText
+            android:layout_weight="6"
+            android:id="@+id/et_search"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/search_shape"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="请输入剧名"
+            android:textColor="#8f8e8e"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/search"
+            >
+
+        </com.u2androidproject.widget.MyEditText>
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="热门搜索"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.u2androidproject.widget.MyFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.u2androidproject.widget.MyFlowLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_noMatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="对不起，没有找到您搜索的影片"
+        android:textSize="34sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

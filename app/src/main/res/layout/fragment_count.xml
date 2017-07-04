@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.u2androidproject.fragment.fragment1.fragment1_3.CountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridView
+        android:id="@+id/mGridView"
+        android:numColumns="4"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+
+</LinearLayout>

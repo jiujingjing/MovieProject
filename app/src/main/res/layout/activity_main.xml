@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.u2androidproject.MainActivity">
+
+    <RelativeLayout
+        android:layout_weight="8"
+        android:id="@+id/relative_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></RelativeLayout>
+
+    <RadioGroup
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/mGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RadioButton
+            android:checked="true"
+            android:gravity="center"
+            android:id="@+id/rb_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/rb1_selector"
+            android:button="@null"
+            android:text="推荐"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            />
+        <RadioButton
+            android:drawableTop="@drawable/rb2_selector"
+            android:id="@+id/rb_2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="发现"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            />
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="追剧"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:drawableTop="@drawable/rb3_selector"
+            />
+
+
+    </RadioGroup>
+
+</LinearLayout>
+
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.u2androidproject.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff5593"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_mine"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/tv_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="微博登录"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/weibo_shape"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="微信登录"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/weixin_shape"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_qq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="QQ登录"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/qq_shape"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

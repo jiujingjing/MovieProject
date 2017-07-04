@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="1"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+    <com.u2androidproject.widget.RoundImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        myview:type="circle"
+        android:id="@+id/iv_head"
+        android:src="@mipmap/ic_launcher"
+        />
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="姓名"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:gravity="top"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:text="粉丝数："
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/tv_fans"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

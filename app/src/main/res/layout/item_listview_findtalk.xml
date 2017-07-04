@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@id/imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="要命的自拍控"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  今日:"
+                android:textSize="14sp"
+                android:textColor="#ff5593"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="99+"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:textColor="#ff5593"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="15分钟前"
+                android:textSize="12sp"
+                android:gravity="center_vertical|right"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_lastTitle"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="奇怪的freestyle"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>

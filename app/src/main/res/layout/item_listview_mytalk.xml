@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+
+        <com.u2androidproject.widget.RoundImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            myView:type="circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="傲娇小丸子"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="4分钟前"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="最讨厌没空调"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="最讨厌没空调"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.u2androidproject.widget.NoScrollGridView
+        android:id="@+id/mGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="3dp"
+        android:numColumns="3"></com.u2androidproject.widget.NoScrollGridView>
+    </LinearLayout>
+</LinearLayout>

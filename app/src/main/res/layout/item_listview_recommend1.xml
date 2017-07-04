@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/more"
+                android:text="热门韩剧"
+                android:textColor="#ff5593"
+                android:textSize="22sp" />
+
+            <com.u2androidproject.widget.NoScrollGridView
+                android:id="@+id/mGridView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:verticalSpacing="2dp"></com.u2androidproject.widget.NoScrollGridView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="MyView">
+        <!--name:自定义属性的名字   format自定义属性的格式-->
+        <attr name="Text" format="string|reference" />
+        <attr name="Color" format="color|reference" />
+        <attr name="Src" format="reference" />
+    </declare-styleable>
+
+    <!--RoundImageView-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+</resources>

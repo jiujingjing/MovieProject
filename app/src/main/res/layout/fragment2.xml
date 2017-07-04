@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.u2androidproject.fragment.Fragment2">
+
+    <LinearLayout
+        android:background="#ff5593"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/search_shape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="  请输入剧名"
+            android:textColor="#8f8e8e"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/search"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.u2androidproject.widget.NoScrollGridView
+                android:id="@+id/mGridView"
+                android:numColumns="4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.u2androidproject.widget.NoScrollGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e1dede"></View>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=" 我的讨论区"
+                android:textSize="18sp"
+                android:textColor="#ff5593"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/star_red"
+                />
+
+            <com.u2androidproject.widget.NoScrollListView
+                android:id="@+id/mListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.u2androidproject.widget.NoScrollListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e1dede"></View>
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=" 大家的讨论区"
+                android:textSize="18sp"
+                android:textColor="#ff5593"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/star_red"
+                />
+
+            <com.u2androidproject.widget.NoScrollListView
+                android:id="@+id/mListView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.u2androidproject.widget.NoScrollListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
